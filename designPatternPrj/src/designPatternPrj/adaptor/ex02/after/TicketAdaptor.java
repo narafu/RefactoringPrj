@@ -5,6 +5,10 @@ import designPatternPrj.adaptor.ex02.before.TicketG;
 
 public class TicketAdaptor implements TicketG {
 
+//	TicketAdaptor는 TicketG 인터페이스를 구현하고 있지만,
+//	TicketA 인터페이스를 주입함으로써, TicketA 인터페이스를 구현한 TicketSystemA를 호출할 수 있다.
+//	그래서, Client는 TicketAdaptor를 통해, TicketG가 구현된 클래스가 아닌, TicketA가 구현된 TicketSystemA를 사용할 수 있다.
+	
 	private TicketA ticket;
 
 	public TicketAdaptor(TicketA ticket) {
