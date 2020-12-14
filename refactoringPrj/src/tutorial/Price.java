@@ -1,0 +1,32 @@
+package tutorial;
+
+public abstract class Price {
+
+	abstract int getPriceCode();
+}
+
+class ChildrenPrice extends Price {
+
+	@Override
+	int getPriceCode() {
+		return Movie.CHILDREN;
+	}
+}
+
+class BewReleasePrice extends Price {
+
+	@Override
+	int getPriceCode() {
+		return Movie.NEW_RELEASE;
+	}
+
+}
+
+class RegularPrice extends Price {
+
+	@Override
+	int getPriceCode() {
+		return Movie.REGULAR;
+	}
+
+}
