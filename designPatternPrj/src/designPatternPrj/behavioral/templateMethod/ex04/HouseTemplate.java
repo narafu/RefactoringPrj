@@ -12,7 +12,7 @@ public abstract class HouseTemplate {
 
 	private void buildFoundation() {
 		// TODO Auto-generated method stub
-		System.out.println("Building foundation with cement,iron rods and sand");
+		System.out.println("Building foundation with cement, iron rods and sand");
 	}
 
 	protected abstract void buildPillars();
