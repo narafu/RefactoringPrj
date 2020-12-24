@@ -9,6 +9,15 @@ public class HomeTheaterTestDrive {
 	public static void main(String[] args) {
 		// 여기에 Components를 초기화함.
 
+		Amplifier amp = null;
+		Tuner tuner = null;
+		DvdPlayer dvd = null;
+		CdPlayer cd = null;
+		Projector projector = null;
+		TheaterLights lights = null;
+		Screen screen = null;
+		PopcornPopper popper = null;
+
 		HomeTheaterFacade homeTheater = new HomeTheaterFacade(amp, tuner, dvd, cd, projector, screen, lights, popper);
 		homeTheater.watchMovie("Raiders of the Lost Ark");
 		homeTheater.endMovie();
